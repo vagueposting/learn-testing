@@ -1,0 +1,28 @@
+{
+  "name": "learn-testing",
+  "version": "1.0.0",
+  "description": "Repository for learning Jest.",
+  "keywords": [
+    "testing"
+  ],
+  "license": "MIT",
+  "author": "vagueposting",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev",
+    "test-func": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-typescript": "^7.28.5",
+    "babel-jest": "^30.3.0",
+    "jest": "^30.3.0"
+  },
+  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  }
+}
