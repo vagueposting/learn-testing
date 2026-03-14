@@ -2,46 +2,46 @@ import { reverseString } from "./reverseString";
 
 interface testCase {
     original: string;
-    new: string;
+    expected: string;
 }
 
 const testCases: Record<string, testCase[]> = {
     singleWord: [ 
     {
         original: 'palindrome',
-        new: 'emordnilap'
+        expected: 'emordnilap'
     },
     {
         original: 'cat',
-        new: 'tac'
+        expected: 'tac'
     },
     {
         original: 'dog',
-        new: 'god'
+        expected: 'god'
     }
     ],
     sentences: [
         {
             original: 'the quick brown fox jumps over the lazy dog',
-            new: 'god yzal eht revo spmuj xof nworb kciuq eht'
+            expected: 'god yzal eht revo spmuj xof nworb kciuq eht'
         },
         {
             original: 'pack my box with five dozen liquor jugs',
-            new: 'sguj rouqil nezod evif htiw xob ym kcap'
+            expected: 'sguj rouqil nezod evif htiw xob ym kcap'
         },
         {
             original: 'the five boxing wizards jump quickly',
-            new: 'ylkciuq pmuj sdraziw gnixob evif eht'
+            expected: 'ylkciuq pmuj sdraziw gnixob evif eht'
         }
     ]}
 
 test('reverse single words', (): void => {
     testCases.singleWord.forEach(t => 
-        expect(reverseString(t.original)).toBe(t.new))
+        expect(reverseString(t.original)).toBe(t.expected))
 })
 
 test('sentences', (): void => {
     testCases.sentences.forEach(t =>
-        expect(reverseString(t.original)).toBe(t.new)
+        expect(reverseString(t.original)).toBe(t.expected)
     )
 })
